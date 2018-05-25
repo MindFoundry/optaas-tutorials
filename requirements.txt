@@ -1,0 +1,2 @@
+--find-links ./requirements
+mindfoundry-optaas-client
