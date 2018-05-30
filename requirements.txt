@@ -1,3 +1,4 @@
 --find-links ./requirements
 scikit-learn[alldeps]
+pandas
 mindfoundry-optaas-client
