@@ -1,4 +1,3 @@
---find-links ./requirements
 scikit-learn[alldeps]
 pandas
-mindfoundry-optaas-client
+mindfoundry-optaas-client==1.2.5
