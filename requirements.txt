@@ -1,3 +1,4 @@
 scikit-learn[alldeps]
 pandas
+matplotlib
 mindfoundry-optaas-client==1.2.8
