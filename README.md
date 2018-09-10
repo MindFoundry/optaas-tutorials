@@ -11,3 +11,5 @@ you solve problems using Bayesian Optimization.
 
 You can install the [OPTaaS Python Client](https://pypi.python.org/pypi/mindfoundry-optaas-client) by simply running:
 `pip install mindfoundry-optaas-client`
+
+We also provide an [OPTaaS R Client](https://github.com/MindFoundry/optaas-r-client).
