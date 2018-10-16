@@ -6,12 +6,11 @@ ENV HOME /home/${NB_USER}
 ENV USER ${NB_USER}
 USER ${NB_USER}
 
-RUN Rscript -e "options(unzip = 'internal'); devtools::install_github('MindFoundry/optaas-r-client')"
-
 # COPY doesn't handle substitutions so forced to assume that NB_UID will always be 1000
 COPY --chown=1000 . ${HOME}
 WORKDIR ${HOME}
 
 RUN pip install -r requirements.txt
+RUN Rscript -e "options(unzip = 'internal'); devtools::install_github('MindFoundry/optaas-r-client')"
 
 CMD ["jupyter", "notebook", "--ip", "0.0.0.0"]
