@@ -11,6 +11,6 @@ COPY --chown=1000 . ${HOME}
 WORKDIR ${HOME}
 
 RUN pip install -r requirements.txt
-RUN Rscript -e "options(unzip = 'internal'); devtools::install_github('MindFoundry/optaas-r-client@1.3.3')"
+RUN Rscript -e "options(unzip = 'internal'); devtools::install_github('MindFoundry/optaas-r-client@1.3.4')"
 
 CMD ["jupyter", "notebook", "--ip", "0.0.0.0"]
